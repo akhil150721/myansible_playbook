@@ -1,7 +1,0 @@
----
-- name : ping the nodes
-  hosts: all
-  become : yes
-  tasks:
-   ping:
-    
