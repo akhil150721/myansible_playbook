@@ -3,7 +3,7 @@
   become: yes
   gather_facts: yes
   tasks:
-    - name: install webserver on node 
+    - name: i want install webserver on node 
       apt:
-      - name: apache2
-        state: absent 
+       - name: apache2
+         state: absent 
