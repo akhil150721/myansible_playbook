@@ -18,7 +18,7 @@
        state : present
 
    - name : i want to start webserver on redhat nodes
-     dnf :
+     service:
       name : httpd
       state : started      
        
