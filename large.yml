@@ -4,21 +4,21 @@
   tasks : 
    - name : install webserver on ubuntu node
      apt : 
-      name : {{myinstaller}}
+      name : "{{myinstaller}}"
       state : present
    
    - name : i want to start a webserver on ubuntu node
      service  : 
-      name : {{myinstaller}}
+      name : "{{myinstaller}}"
       state : started   
       
    - name : install webserver on redHat node
      dnf : 
-      name : {{myredinstaller}}
+      name : "{{myredinstaller}}"
       state : present
 
    - name : i want to start webserver on redHat node
      service :
-      name : {{myredinstaller}}
+      name : "{{myredinstaller}}"
       state : started      
        
