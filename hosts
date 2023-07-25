@@ -1,7 +1,2 @@
-[myservers]
 172.31.4.177
 172.31.2.71
-
-[myservers:vars]
-myinstaller: apache2
-myredinstaller: httpd
