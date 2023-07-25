@@ -12,12 +12,12 @@
       name :  apache2
       state : started   
       
-   - name : install webserver on redhat node
+   - name : install webserver on redHat node
      dnf : 
       name : httpd
       state : present
 
-   - name : i want to start webserver on redhat node
+   - name : i want to start webserver on redHat node
      service:
       name : httpd
       state : started      
