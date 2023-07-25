@@ -1,24 +1,24 @@
 ---
-- hosts : all
+- hosts : myservers
   become : yes
   tasks : 
    - name : install webserver on ubuntu node
      apt : 
-      name : apache2
+      name : {{myinstaller}}
       state : present
    
    - name : i want to start a webserver on ubuntu node
      service  : 
-      name :  apache2
+      name : {{myinstaller}}
       state : started   
       
    - name : install webserver on redHat node
      dnf : 
-      name : httpd
+      name : {{myredinstaller}}
       state : present
 
    - name : i want to start webserver on redHat node
-     service:
-      name : httpd
+     service :
+      name : {{myredinstaller}}
       state : started      
        
