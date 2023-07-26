@@ -1,7 +1,8 @@
 ---
 - hosts: myservers
   become: yes
-  tasks: 
+  vars: 
+  tasks:
    - name: install webserver on ubuntu node
      apt: 
       name: "{{nodeserver}}"
