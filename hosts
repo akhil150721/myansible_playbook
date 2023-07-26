@@ -1,2 +1,7 @@
+[myservers]
 172.31.4.177
 172.31.2.71
+
+[myservers:vars]
+nodeserver: apache2
+redhatserver: httpd
