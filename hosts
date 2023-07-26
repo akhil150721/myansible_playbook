@@ -10,5 +10,5 @@
 
 
 [myservers:vars]
-ubuntuwebserver: apache2
-redhatwebserver: httpd 
+ubuntuwebserver= apache2
+redhatwebserver= httpd 
