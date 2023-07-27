@@ -1,0 +1,10 @@
+---
+- hosts: 172.31.4.177
+  become: yes
+  tasks: 
+  - include_tasks: afile.yml
+
+  - name: copy the file to node
+    copy: 
+      src: newfile
+      dest: /home/ubuntu/file.txt
