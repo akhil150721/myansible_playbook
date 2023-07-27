@@ -1,6 +1,7 @@
 ---
 - hosts: 172.31.4.177
   become: yes
+  include_tasks: afile.yml
   tasks: 
   - name: i want to install direct linux on node
     command: hostname -f
@@ -8,6 +9,4 @@
 
   - name: i want to display result
     debug: 
-        msg: "{{myresult}}"
-
-  include_tasks: afile.yml      
+        msg: "{{myresult}}"   
