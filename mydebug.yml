@@ -9,7 +9,3 @@
   - name: i want to display result
     debug: 
         msg: "{{myresult}}"
-
-
-          
-            :   
