@@ -7,8 +7,3 @@
 
 [myredhatserver]
 172.31.2.71
-
-
-[myservers:vars]
-ubuntuwebserver= apache2
-redhatwebserver= httpd 
