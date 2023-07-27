@@ -8,4 +8,4 @@
 
     - name: i want to display result
       debug: 
-       msd: "{{myresult}}" 
+       msg: "{{myresult}}" 
