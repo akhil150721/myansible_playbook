@@ -1,0 +1,11 @@
+---
+- hosts: 172.31.4.177
+  become: yes
+  tasks: 
+    - name: i want to install direct linu on node
+      command: hostname -f
+      register : myresult
+
+    - name: i want to display result
+      debug: 
+       msd: "{{myresult}}" 
