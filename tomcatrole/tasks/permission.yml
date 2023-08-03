@@ -1,3 +1,4 @@
+---
 - name: grant permission 
   command:  sudo chown -R tomcat:tomcat /opt/tomcat/
 
