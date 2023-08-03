@@ -1,0 +1,5 @@
+- name: grant permission 
+  command:  sudo chown -R tomcat:tomcat /opt/tomcat/
+
+- name: grant 
+  command: sudo chmod -R u+x /opt/tomcat/bin
